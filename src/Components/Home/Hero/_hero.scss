@@ -1,0 +1,21 @@
+@mixin flex-center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    height: 50vh;
+    // background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(../../../assets/img/hero-img.jpg);
+    border:1px solid black;
+    background-size:cover;
+    display:flex;
+    @include flex-center();
+    color:white;
+    h1{
+        font-size:1.7em;
+    }
+    p{
+        margin-top:20px;
+    }
+}
