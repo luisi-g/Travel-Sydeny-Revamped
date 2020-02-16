@@ -5,17 +5,35 @@
 }
 
 .hero{
-    height: 50vh;
+    height: 100vh;
     // background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(../../../assets/img/hero-img.jpg);
-    border:1px solid black;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
     background-size:cover;
+    overflow: hidden;
     display:flex;
     @include flex-center();
     color:white;
+    position: relative;
     h1{
         font-size:1.7em;
     }
     p{
         margin-top:20px;
     }
+    video{
+        position:absolute;
+        height: 100%;
+        width: 177.77777778vh; /* 100 * 16 / 9 */
+        min-width: 100%;
+        min-height: 56.25vw; /* 100 * 9 / 16 */
+    }
+}
+.video__text{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+    display:flex;
+    @include flex-center();
+    border:1px solid white;
 }
