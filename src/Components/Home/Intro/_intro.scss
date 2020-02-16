@@ -1,0 +1,22 @@
+@mixin flex-center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+    height:70vh;
+    padding:10px;
+    display: flex;
+    @include flex-center();
+    background-color: #FFF8F0;
+    h2{
+        font-size:1.2em;
+    }
+    p{
+        font-size:.8em;
+        width:85%;
+        margin:0 auto;
+        margin: 10px 0;
+    }
+}
