@@ -4,7 +4,7 @@ import './_intro.scss';
 
 const Intro = () => {
     return (
-        <div className="intro">
+        <div className="intro" id="introInfo">
             <h2>Whats does sydney have to offer?</h2>
             <p>Sydney is a coastal metropolis whose five million residents make it the largest city in Australia and is famolus for many things.
                  The glittering harbour, complemented by landmarks like the Sydney Opera House and the Sydney Harbour Bridge.

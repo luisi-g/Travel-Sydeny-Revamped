@@ -1,39 +1,124 @@
 @mixin flex-center {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.hero{
+@media only screen and (min-width: 320px) {
+  .hero {
     height: 100vh;
     // background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(../../../assets/img/hero-img.jpg);
-    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
-    background-size:cover;
-    overflow: hidden;
-    display:flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    display: flex;
     @include flex-center();
-    color:white;
+    overflow: hidden;
+    color: white;
     position: relative;
+    h1 {
+      margin-top: 250px;
+      font-size: 1.5em;
+    }
+    p {
+      margin-top: 40px;
+    }
+    video {
+      position: absolute;
+      height: 100%;
+      width: 177.77777778vh; /* 100 * 16 / 9 */
+      min-width: 100%;
+      min-height: 56.25vw; /* 100 * 9 / 16 */
+    }
+  }
+  .video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    &__button {
+      margin-top: 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      animation: mobileHover 3s infinite linear;
+      button {
+        transition: 5s;
+        font-size: 4.5em;
+        color: rgb(247, 112, 112);
+        background: none;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 375px){
+  .hero{
+    height: 85vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
     h1{
-        font-size:1.7em;
+      margin-top:300px;
+      font-size:3em;
     }
     p{
-        margin-top:20px;
+      font-size:1.3em;
     }
-    video{
-        position:absolute;
-        height: 100%;
-        width: 177.77777778vh; /* 100 * 16 / 9 */
-        min-width: 100%;
-        min-height: 56.25vw; /* 100 * 9 / 16 */
+  }
+
+  .video{
+    &__button{
+      margin-top:250px;
+      font-size:1.4em;
     }
+  }
 }
-.video__text{
-    position: absolute;
-    height:100%;
-    width:100%;
-    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
-    display:flex;
+
+@media only screen and (min-width: 900px) {
+  .hero {
+    h1{
+      margin-top:300px;
+      font-size:4.5em;
+    }
+    p{
+      margin-top:100px;
+      font-size:1.8em;
+    }
+  }
+
+  .video{
+    &__button{
+      margin-top:200px;
+      font-size:2em;
+    }
+  }
+}
+
+@media only screen and (min-width:1060px){
+  .hero {
+    height:100vh;
+    h1{
+      margin-top:0px;
+      font-size:4.6em;
+    }
+    p{
+      margin-top: 40px;
+      font-size:1.8em;
+    }
+  }
+  .video{
     @include flex-center();
-    border:1px solid white;
+    &__button{
+      margin-top:200px;
+      font-size:1.3em;
+    }
+  }
 }
