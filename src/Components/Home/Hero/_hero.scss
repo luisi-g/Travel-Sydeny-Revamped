@@ -59,14 +59,14 @@
 
 @media only screen and (min-width: 375px){
   .hero{
-    height: 85vh;
+    height: 100vh;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
     h1{
-      margin-top:300px;
+      margin-top:40vh;
       font-size:3em;
     }
     p{
@@ -76,7 +76,7 @@
 
   .video{
     &__button{
-      margin-top:250px;
+      margin-top:20vh;
       font-size:1.4em;
     }
   }
@@ -85,18 +85,16 @@
 @media only screen and (min-width: 900px) {
   .hero {
     h1{
-      margin-top:300px;
       font-size:4.5em;
+      margin-top:30vh;
     }
     p{
-      margin-top:100px;
       font-size:1.8em;
     }
   }
 
   .video{
     &__button{
-      margin-top:200px;
       font-size:2em;
     }
   }
@@ -117,7 +115,6 @@
   .video{
     @include flex-center();
     &__button{
-      margin-top:200px;
       font-size:1.3em;
     }
   }
