@@ -1,10 +1,10 @@
 import React from 'react';
 
-import animal from '../../../assets/img/animal.jpg';
+import animal from '../../../assets/img/animal.png';
 import jungle from '../../../assets/img/jungle.jpg';
 import operaHouse from '../../../assets/img/operaHouse.jpg'
 
-import './snapShot.scss'
+import './_snapShot.scss'
 
 const SnapShot = () => {
     return (

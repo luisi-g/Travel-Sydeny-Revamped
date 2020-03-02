@@ -3,6 +3,7 @@ import React from 'react';
 import Hero from '../Components/Home/Hero/Hero'
 import Intro from '../Components/Home/Intro/Intro';
 import SnapShot from '../Components/Home/SnapShots/SnapShot'
+import HomeCardSection from '../Components/Home/CardSection/HomeCardSection'
 import '../Components/_main.scss'
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
             <Hero />
             <Intro />
             <SnapShot />
+            <HomeCardSection />
         </div>
     )
 }
