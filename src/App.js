@@ -6,17 +6,18 @@ import './Components/_reset.scss';
 
 import Nav from './Components/Navigation/Nav'
 // Pages
-import Home from './Pages/Home'
+import Home from './Pages/Home';
+import Explore from './Pages/Explore'
 
 function App() {
   return (
     <div className="App">
-      <Nav />
       <Router>
+      <Nav />
         <Switch>
           <Route exact path="/"  component={Home}/>
-          {/* <Route exact path="/todo"  />
-          <Route exact path="/food" />
+          <Route exact path="/explore" component={Explore}  />
+          {/* <Route exact path="/food" />
           <Route exact path="/contact" /> */}
         </Switch>
       </Router>

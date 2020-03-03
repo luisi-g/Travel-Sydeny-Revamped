@@ -1,5 +1,6 @@
 import React from "react"
 import "./_Nav.scss"
+import { NavLink } from "react-router-dom"
 
 const Nav = () => {
     return (
@@ -8,9 +9,9 @@ const Nav = () => {
 
             <div id="menu" className="sidemenu">
                 <button className="closebtn" onClick={closeFunction}>&times;</button>
-                <a href="#" onClick={closeFunction}>Home</a>
-                <a href="#" onClick={closeFunction}>About</a>
-                <a href="#" onClick={closeFunction}>Projects</a>
+                <NavLink to="/" onClick={closeFunction} activeClassName="active" >Home</NavLink>
+                <NavLink to="/explore" onClick={closeFunction} activeClassName="active" >Explore</NavLink>
+                {/* <a href="#" onClick={closeFunction}>Projects</a> */}
                 {/* <a activeClassName="active" onClick={closeFunction}>Contact</a> */}
             </div>
         </nav>
